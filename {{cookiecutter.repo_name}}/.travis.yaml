@@ -1,0 +1,16 @@
+language: python
+sudo: false
+cache: pip
+python: 2.7
+
+env:
+  - TOXENV=static
+  - TOXENV=metrics
+  - TOXENV=py{{ cookiecutter.min_python|replace(".", "") }}
+
+install: pip install tox
+script: tox
+
+notifications:
+  email:
+    - {{ cookiecutter.email }}
