@@ -42,7 +42,7 @@ except ImportError:
 setuptools.setup(
     setup_requires=["pbr>=1.8"],
     tests_require=["tox"],
-    cmdclass={'test': Tox}
+    cmdclass={'test': Tox},
     pbr=True)
 {% else %}
 def get_description():
