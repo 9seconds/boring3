@@ -4,7 +4,7 @@
 
 import setuptools
 
-from setuptools.command.test import test as TestCommand
+from setuptools.command.test import test as TestCommand  # NOQA
 import sys
 
 
@@ -22,8 +22,8 @@ class Tox(TestCommand):
         self.test_suite = True
 
     def run_tests(self):
-        import tox
         import shlex
+        import tox
 
         args = self.tox_args
         if args:
@@ -63,9 +63,9 @@ def get_install_requires():
 
     reqs, links = [], []
     for item in requirements:
-        if getattr(item, 'url', None):  # older pip has url
+        if getattr(item, "url", None):
             links.append(str(item.url))
-        if getattr(item, 'link', None): # newer pip has link
+        if getattr(item, "link", None):
             links.append(str(item.link))
         if item.req:
             reqs.append(str(item.req))
