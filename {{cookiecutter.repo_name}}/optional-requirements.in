@@ -1,0 +1,6 @@
+black
+pip-tools
+ipython
+jedi
+python-language-server
+pyls-black

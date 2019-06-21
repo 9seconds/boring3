@@ -7,13 +7,7 @@
     "email": "nineseconds@yandex.ru",
     "summary": "Short package description",
     "version": "0.0.1",
-    "license": ["MIT"],
-    "pep8_line_length": "79",
-    "with_pbr": ["yes", "no"],
-    "min_python": ["2.6", "2.7", "3.3"],
-    "cross_platform": ["yes", "no"],
-    "test_runner": ["py.test", "unittest"],
-    "with_travis": ["yes", "no"],
+    "line_length": "79",
     "_copy_without_render": [
         ".gitignore"
     ]

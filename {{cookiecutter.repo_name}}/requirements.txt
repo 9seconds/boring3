@@ -1,1 +1,0 @@
-{%- if cookiecutter.cross_platform == "yes" %}six{% endif %}
