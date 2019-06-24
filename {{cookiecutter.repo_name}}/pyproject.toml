@@ -7,3 +7,5 @@ requires = ["setuptools", "wheel"]
 
 [tool.black]
 line-length = {{ cookiecutter.line_length }}
+target-version = ["py36"]
+exclude = '\.eggs|\.git|\.hg|\.mypy|_cache|\.nox|\.tox|\.venv|_build|buck-out|build|dist|migrations'
