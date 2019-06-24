@@ -1,5 +1,9 @@
 [build-system]
+{%- if cookiecutter.setuptools_scm == "yes" %}
+requires = ["setuptools>=30.3.0", "wheel", "setuptools_scm"]
+{%- else %}
 requires = ["setuptools", "wheel"]
+{%- endif %}
 
 [tool.black]
 line-length = {{ cookiecutter.line_length }}
